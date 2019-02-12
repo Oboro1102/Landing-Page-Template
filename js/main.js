@@ -31,7 +31,7 @@ $(".smooth--hash").on("click", function (e) {
     }, 500);
 });
 
-$(".main-warp__arrow").on("click", function (e) {
+$(".main-warp__scroll").on("click", function (e) {
     e.preventDefault;
     $("html, body").animate({
         scrollTop: $(".content-warp").offset().top

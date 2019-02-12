@@ -31,6 +31,13 @@ $(".smooth--hash").on("click", function (e) {
     }, 500);
 });
 
+$(".main-warp__arrow").on("click", function (e) {
+    e.preventDefault;
+    $("html, body").animate({
+        scrollTop: $(".content-warp").offset().top
+    }, 800);
+});
+
 // 產品切換顯示
 $(".detail-warp__button").on("click", function () {
     $(this).addClass("detail-warp__button--active").siblings().removeClass("detail-warp__button--active");

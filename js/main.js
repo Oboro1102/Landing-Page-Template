@@ -1,11 +1,11 @@
-// 起始頁面讀取動畫
+// page loading screen
 $(window).on("load", function () {
     setTimeout(() => {
         $('#loading').hide("fade", 300);
     }, 1);
 })
 
-// 視窗滾動事件
+// scroll event
 $(window).on("load scroll", function () {
     if ($(this).scrollTop() > 0) {
         $('.toTop').show("fade");
@@ -18,14 +18,14 @@ $(window).on("load scroll", function () {
     }
 });
 
-// 回到頂端按鈕
+// to top button action
 $(".toTop").on("click", function () {
     $("html,body").animate({
         scrollTop: 0
     }, 500);
 });
 
-// 錨點平滑轉跳
+// hash jump smooth
 $(".smoothHash").on("click", function (e) {
     e.preventDefault;
     let navHeight = $(".navbar").outerHeight(true);
@@ -35,14 +35,14 @@ $(".smoothHash").on("click", function (e) {
     }, 500);
 });
 
-// 產品切換顯示
+// switch product tab
 $(".product-wrap__nav__link").on("click", function () {
-    $(this).addClass("product-wrap__nav__link--active").siblings().removeClass("product-wrap__nav__link--active");
     let itemContent = $(this).attr("data-name");
+    $(this).addClass("product-wrap__nav__link--active").siblings().removeClass("product-wrap__nav__link--active");
     $(itemContent).show().siblings().hide();
 });
 
-// 頁腳顯示現在年度
+// cpoyright show current year
 $('#nowTime').text(function () {
     let date = new Date();
     return date.getFullYear();

@@ -184,7 +184,6 @@ button {
 
 .toTop__icon,
 .scrollDown__icon {
-  font-size: 1.7rem;
   -webkit-animation-name: upDown;
           animation-name: upDown;
   -webkit-animation-duration: 1s;
@@ -193,6 +192,13 @@ button {
           animation-iteration-count: infinite;
   -webkit-animation-timing-function: ease-in-out;
           animation-timing-function: ease-in-out;
+    .a {
+      fill: none;
+      stroke: #ffffff;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+      stroke-width: 5px;
+    }
 }
 
 .toTop {

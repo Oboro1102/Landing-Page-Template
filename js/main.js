@@ -1,10 +1,3 @@
-// page loading screen
-$(window).on("load", function () {
-    setTimeout(() => {
-        $('#loading').hide("fade", 300);
-    }, 1);
-})
-
 // scroll event
 $(window).on("load scroll", function () {
     if ($(this).scrollTop() > 0) {

@@ -192,13 +192,6 @@ button {
           animation-iteration-count: infinite;
   -webkit-animation-timing-function: ease-in-out;
           animation-timing-function: ease-in-out;
-    .a {
-      fill: none;
-      stroke: #ffffff;
-      stroke-linecap: round;
-      stroke-linejoin: round;
-      stroke-width: 5px;
-    }
 }
 
 .toTop {
@@ -208,6 +201,14 @@ button {
 
 .toTop:hover {
   background-color: #e80012;
+}
+
+.a {
+  fill: none;
+  stroke: #ffffff;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-width: 5px;
 }
 
 .navbar {

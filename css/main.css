@@ -401,7 +401,7 @@ button {
   margin: 0;
   font-size: 5vw;
   font-weight: 900;
-  border-bottom: 8px solid #000000;
+  border-bottom: 8px solid #212529;
 }
 
 @media (max-width: 767.98px) {

@@ -165,31 +165,6 @@ button {
   }
 }
 
-#loading {
-  position: fixed;
-  -webkit-overflow-scrolling: touch;
-  top: 0;
-  left: 0;
-  z-index: 250;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  width: 100vw;
-  height: 100vh;
-  color: #ffffff;
-  background-color: #000000;
-}
-
-#loading i {
-  font-size: 5rem;
-}
-
 .toTop,
 .scrollDown {
   position: fixed;
@@ -264,16 +239,6 @@ button {
   color: #ffffff;
   font-size: 1.4rem;
   font-weight: 900;
-}
-
-.navbar__nav__link span {
-  margin-left: .5em;
-}
-
-@media (max-width: 991.98px) {
-  .navbar__nav__link span {
-    display: none;
-  }
 }
 
 .main-wrap {
